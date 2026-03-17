@@ -24,7 +24,7 @@ stages:
       displayName: 'Build Docker Image'
       inputs:
         containerRegistry: 'jashu'
-        repository: 'JASWANTH'
+        repository: 'BACKEND'
         command: 'build'
         Dockerfile: '**/Dockerfile'
         tags: |
@@ -42,7 +42,7 @@ stages:
       displayName: 'Push Docker Image' 
       inputs:
         containerRegistry: 'jashu'
-        repository: 'JASWANTH'
+        repository: 'BACKEND'
         command: 'push'
         tags: |
           $(version)
