@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: backend-api
-        image: vjcacr.azurecr.io/BACKEND:VERSION
+        image: vjcacr.azurecr.io/backend:VERSION
         imagePullPolicy: Always
         env:
           - name: DB_CONN_STR
